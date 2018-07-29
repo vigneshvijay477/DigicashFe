@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="DigiCash"
+        android:textAlignment="center"
+        android:textColor="#4FC3F7"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Sign Up"
+        android:textSize="27dp" />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#EEEEEE"
+        android:id="@+id/linearLayout">
+
+
+
+        <EditText
+            android:id="@+id/phone1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter Your Mobile Number"
+            android:inputType="number"/>
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/logo"
+        android:background="@drawable/button"
+        android:text="Continue"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ex_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:text="Existing User? "
+        android:layout_marginLeft="65dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:textColor="@color/basic_blue"
+        android:layout_toRightOf="@+id/ex_user"
+        android:layout_below="@+id/button1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quote"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/c_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/c_name"
+        android:layout_below="@+id/quote"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

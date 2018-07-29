@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vignesh.adcoinfe.Balance">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/app_ic" />
+
+    <TextView
+        android:id="@+id/c_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/logo"
+        android:text="@string/title"
+        android:textColor="@color/basic_blue"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/c_name"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="65dp"
+            android:text="Balance"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bal_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/balance"
+            android:layout_below="@+id/balance"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/balance" />
+
+        <TextView
+            android:id="@+id/cur_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/logo"
+            android:layout_below="@+id/bal_img"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="45dp"
+            android:text="Current Balance : "
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bal_amo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cur_bal"
+        android:layout_alignBottom="@+id/cur_bal"
+        android:layout_toEndOf="@+id/cur_bal"
+        android:text=" ₹ 250"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>
