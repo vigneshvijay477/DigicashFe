@@ -4,6 +4,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -19,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements cashout.OnFragmen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        ft.add(R.id.Frame1,new cashout());
-//        ft.commit();
-//
+     ft.add(R.id.Frame1,new cashout());
+       ft.commit();
+
        // mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         BottomNavigationViewHelper.removeShiftMode(navigation);
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements cashout.OnFragmen
                     ft0.replace(R.id.Frame1,new cashout());
                     ft0.commit();
                     break;
+
 
 
                 case R.id.navigation_balance:
