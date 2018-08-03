@@ -1,6 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_ic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/c_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/basic_blue"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/c_name"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:text="Login"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_below="@+id/login"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#EEEEEE"
+        android:id="@+id/linearLayout">
+
+
+
+        <EditText
+            android:id="@+id/moblie_no"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Mobile Number"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linearLayout"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#EEEEEE"
+        android:id="@+id/linearLayout1">
+
+
+
+        <EditText
+            android:id="@+id/pasword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Password"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/login"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_b"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_toStartOf="@+id/textView2"
+        android:text="Forget Password?"
+        android:textColor="@color/basic_blue"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/create_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/forget_pass"
+        android:layout_alignBottom="@+id/forget_pass"
+        android:layout_toEndOf="@+id/login"
+        android:text="Create New Account?"
+        android:textColor="@color/basic_blue"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_acc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="OR"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cname"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/quote"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:text="@string/c_name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

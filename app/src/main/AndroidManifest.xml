@@ -22,7 +22,7 @@
         <activity android:name=".Login"></activity>
         <activity android:name=".SignUpdet">
         </activity>
-        
+
     </application>
 
 </manifest>

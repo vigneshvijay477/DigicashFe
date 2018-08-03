@@ -103,26 +103,26 @@
         android:layout_below="@+id/button1"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/quote"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/quote"
-        android:layout_below="@+id/login"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quote"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/c_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/c_name"
-        android:layout_below="@+id/quote"
-        android:layout_marginTop="5dp"
-        android:gravity="center_horizontal"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/c_name"
+            android:layout_below="@+id/quote"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
 </RelativeLayout>
